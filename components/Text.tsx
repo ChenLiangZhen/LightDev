@@ -12,6 +12,7 @@ export enum FS {
 }
 
 interface TextProps {
+	heavy?: boolean,
 	bold?: boolean,
 	light?: boolean,
 	italic?: boolean,
@@ -23,6 +24,7 @@ interface TextProps {
 }
 
 const Text: React.FC<TextProps & PropsWithChildren> = ({
+	heavy,
 	                                                       bold,
 	                                                       light,
 	                                                       italic,
@@ -37,7 +39,7 @@ const Text: React.FC<TextProps & PropsWithChildren> = ({
 	return (
 		<div style={{
 			fontStyle: italic ? "italic" : "normal",
-			fontWeight: bold ? "600" : light ? "300" : "400",
+			fontWeight: heavy? "700" : bold ? "600" : light ? "300" : "400",
 			fontSize: fontSize ? fontSize : customSize ? customSize : FS.md,
 			color: color,
 			textDecoration: underline ? "underline" : "none"
