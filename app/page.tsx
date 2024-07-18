@@ -4,7 +4,7 @@ import Image from 'next/image'
 import BaseLayout from "@/components/layout/BaseLayout";
 import Card from '@/components/Card';
 import {useState} from "react";
-import Text, {FS} from "@/components/Text";
+import Text, {FontSize} from "@/components/Text";
 
 export default function Home() {
 	
@@ -20,17 +20,17 @@ export default function Home() {
 						<Image
 							className={"hidden lg:block"}
 							style={{borderRadius: 8}}
-						       src={"/light_portrait.jpg"} alt={"lightiichen"}
+						       src={"/light_portrait.jpeg"} alt={"lightiichen"}
 						       width={108}
 						       height={108}
 						/>
 						<div className="w-auto flex-col lg:ml-4">
 							
-							<Text fontSize={FS.lg} className="hidden lg:block text-neutral-800 dark:text-neutral-300 font-bold">Light Chen</Text>
-							<Text fontSize={FS.lg} light className="lg:hidden tracking-wider text-neutral-800 dark:text-neutral-300 font-bold">Light Chen's 個人網站</Text>
+							<Text fontSize={FontSize.lg} className="hidden lg:block text-neutral-800 dark:text-neutral-300 font-bold">Light Chen</Text>
+							<Text fontSize={FontSize.lg} light className="lg:hidden tracking-wider text-neutral-800 dark:text-neutral-300 font-bold">Light Chen's 個人網站</Text>
 							
 							<div className="mb-4 mt-1.5 w-full h-[0.5px]  bg-neutral-400 dark:bg-neutral-300 hidden lg:block"/>
-							<Text fontSize={FS.sm} className="mb-0.5 lg:block hidden tracking-wider dark:text-neutral-300 text-neutral-700 font-normal font-noto">北教大
+							<Text fontSize={FontSize.sm} className="mb-0.5 lg:block hidden tracking-wider dark:text-neutral-300 text-neutral-700 font-normal font-noto">北教大
 								數位科技設計學系</Text>
 						</div>
 					</div>
@@ -39,17 +39,17 @@ export default function Home() {
 				<Image
 					className={"lg:hidden"}
 					style={{borderRadius: 8}}
-					src={"/light_portrait.jpg"} alt={"lightiichen"}
+					src={"/light_portrait.jpeg"} alt={"lightiichen"}
 					width={144}
 					height={144}
 				/>
 				
-				<Text fontSize={FS.xl} heavy className="lg:hidden mt-8 text-neutral-800 dark:text-neutral-300">Light Chen</Text>
-				<Text fontSize={FS.md} className="mb-0.5 mt-0.5 lg:hidden tracking-wider dark:text-neutral-300 text-neutral-700">北教大
+				<Text fontSize={FontSize.xl} heavy className="lg:hidden mt-8 text-neutral-800 dark:text-neutral-300">Light Chen</Text>
+				<Text fontSize={FontSize.md} className="mb-0.5 mt-0.5 lg:hidden tracking-wider dark:text-neutral-300 text-neutral-700">北教大
 					數位科技設計學系</Text>
 				
 				<div className="flex flex-col lg:min-w-[75%] lg:max-w-5xl lg:w-auto lg:p-0 mt-12 lg:mt-4">
-					<Text fontSize={FS.sm} light className="font-noto tracking-wider leading-7">2022 APP 移動應用創新賽台灣賽 第一名<br/>
+					<Text fontSize={FontSize.sm} light className="font-noto tracking-wider leading-7">2022 APP 移動應用創新賽台灣賽 第一名<br/>
 						2022 APP 移動應用創新賽中華區總決賽 二等獎<br/>
 						北教大 專業表現優異獎 第一名<br/>
 						北教大 iOS 開發社團第一屆教學長<br/></Text>
