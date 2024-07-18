@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       'noto': ['Noto Sans TC'],
+      'space': ['Space Mono'],
     },
     extend: {
       backgroundImage: {
